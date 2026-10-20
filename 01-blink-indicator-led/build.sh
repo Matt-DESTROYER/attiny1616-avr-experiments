@@ -1,4 +1,4 @@
-. ../env.sh
+source ../env.sh
 
 avr-gcc -mmcu=attiny1616 \
 	-I"$AVR_LIBC/include" \

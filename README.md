@@ -1,5 +1,8 @@
 # attiny1616-avr-experiments
 
+# Useful commands
+ - Flashing with avrdude `avrdude -c serialupdi -p t1616 -P /dev/ttyUSB0 -U flash:w:\<FILE_NAME\>:e`
+
 ## Components
 
 - Adafruit ATtiny1616 breakout
@@ -66,6 +69,7 @@ The ATtiny1616 has separate port registers for each GPIO port (`PORTA`, `PORTB`,
 | `PORTX_OUTTGL` | Toggle selected output latch bits. Other bits are unaffected. |
 | `PORTX_IN` | Read the current logic levels at the port's pins. |
 | `PORTX_INTFLAGS` | Read or clear port interrupt flags. |
+| `PORTX_PINYCTRL` | Sets the current pin control. (eg `PORT_PULLUPEN_bm` forces HIGH when not LOW instead of floating) |
 
 Here, `X` represents the port letter (`A`, `B`, or `C`). For example, `PORTA_DIRSET` configures selected Port A pins as outputs.
 
