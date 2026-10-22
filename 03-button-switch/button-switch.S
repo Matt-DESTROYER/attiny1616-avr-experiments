@@ -16,7 +16,7 @@ reset:
 	ldi r16, 0b01110000
 	sts PORTA_DIRSET, r16
 
-	; set PA7
+	; set PA7 to input mode
 	ldi r16, 0b10000000
 	sts PORTA_DIRCLR, r16
 
