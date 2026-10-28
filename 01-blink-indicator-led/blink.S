@@ -10,7 +10,7 @@ __vectors:
 
 reset:
 	; set PC0 to output mode
-	ldi r16, 1
+	ldi r16, 0b00000001
 	sts PORTC_OUTSET, r16
 	sts PORTC_DIRSET, r16
 

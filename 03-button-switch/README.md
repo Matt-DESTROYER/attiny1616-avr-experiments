@@ -1,5 +1,5 @@
 # Button Switch
-Switches between active LEDs when tactile button is depressed.
+Switches between active LEDs when tactile button is pressed down.
 
 ## Components
  - 3x LEDs
